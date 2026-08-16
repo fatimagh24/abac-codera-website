@@ -1,0 +1,382 @@
+/* ========================================
+   TABLET — 1024px and below
+======================================== */
+
+@media (max-width: 1024px) {
+
+    /* Navigation */
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 80px 5%;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-content {
+        gap: 40px;
+    }
+}
+
+
+/* ========================================
+   TABLET — 768px and below
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Sections */
+    section {
+        padding: 70px 5%;
+    }
+
+    /* ====================================
+       NAVIGATION
+    ==================================== */
+
+    nav {
+        min-height: 68px;
+    }
+
+    .nav-links,
+    .nav-cta {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* ====================================
+       HERO
+    ==================================== */
+
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.3rem, 8vw, 3.5rem);
+    }
+
+    .hero > .hero-content > p {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 40px;
+    }
+
+    /* ====================================
+       FEATURES
+    ==================================== */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    /* ====================================
+       TESTIMONIALS
+    ==================================== */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    /* ====================================
+       FOOTER
+    ==================================== */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ========================================
+   MOBILE — 576px and below
+======================================== */
+
+@media (max-width: 576px) {
+
+    /* ====================================
+       GLOBAL
+    ==================================== */
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+    }
+
+    /* ====================================
+       NAVIGATION
+    ==================================== */
+
+    nav {
+        width: calc(100% - 40px);
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    /* ====================================
+       HERO
+    ==================================== */
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+        letter-spacing: -0.5px;
+    }
+
+    .hero > .hero-content > p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .stat-plus {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    /* ====================================
+       ABOUT
+    ==================================== */
+
+    .about-text {
+        padding: 25px 20px;
+    }
+
+    /* ====================================
+       FEATURES
+    ==================================== */
+
+    .feature-card {
+        padding: 25px;
+    }
+
+    /* ====================================
+       LEARNING PATH
+    ==================================== */
+
+    .roadmap-step {
+        padding: 24px 18px;
+    }
+
+    .roadmap-arrow {
+        font-size: 1.5rem;
+    }
+
+    /* ====================================
+       TESTIMONIALS
+    ==================================== */
+
+    .testimonial-card {
+        padding: 25px;
+    }
+
+    /* ====================================
+       FAQ
+    ==================================== */
+
+    .faq-question {
+        padding: 18px;
+        font-size: 0.95rem;
+    }
+
+    .faq-answer p {
+        padding: 0 18px 18px;
+        font-size: 0.9rem;
+    }
+
+    /* ====================================
+       CONTACT
+    ==================================== */
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    /* ====================================
+       FOOTER
+    ==================================== */
+
+    footer {
+        padding: 50px 20px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE — 400px and below
+======================================== */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-stats {
+        gap: 5px;
+    }
+
+    .stat-number {
+        font-size: 1.4rem;
+    }
+
+    .stat-plus {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .feature-card,
+    .testimonial-card {
+        padding: 20px;
+    }
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE — 320px
+======================================== */
+
+@media (max-width: 320px) {
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-badge {
+        font-size: 0.7rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stat {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .stat-label {
+        margin-left: 5px;
+    }
+}
+
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
